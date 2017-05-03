@@ -1,0 +1,46 @@
+Algorithm
+
+INCLUDES:
+stdio.h and math.h both required for console printing, e constant, and
+pow().
+
+CONSTANTS:
+Some constants used to avoid magic numbers, eg. NOERROR, INITIALIZED and
+NUMERATOR.
+TENSIGS set to 10^-9 to check when 10 significant figures have been
+reached with sum term.
+NOTFOUND set to 0, used to avoid overwriting the 10-significant-figures
+marker each loop after the first.
+
+MAIN:
+Assign to a variable the return value of getE function.
+Pass that variable to a print function, to print it.
+
+CALCULATING E:
+Initialize two variables to track e, one for the beginning of the loop
+and one for the end of the loop.
+Initialize an accumulator for factorial calculations, and a reciprocal
+variable for the accumulator's reciprocal.
+Initialize a loop counter to be used for factorial calculations and
+tracking when the 10th significant figure is reached.
+
+Begin the do-while loop:
+Set the pre-sum term equal to the post-sum term.
+Calculate n! by multiplying accumulator ((n-1)!) by the loop counter (n).
+Get the reciprocal of n!.
+Add the reciprocal to the post-sum term.
+
+If the reciprocal is less than 10^-9, record the current iteration value
+to be printed later.
+
+When the reciprocal reaches machine epsilon, 1/n! will be 0, and the
+loop is exited.
+
+Print the recorded iteration as being the term when 10 significant
+digits have been reached.
+
+Return the calculated value of e.
+
+OUTPUT:
+Print the calculated value of e.
+Print the constant value of e from math.h, M_E.

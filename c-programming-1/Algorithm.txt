@@ -1,0 +1,27 @@
+Sean Monroe
+1571224
+COP4338 U04
+Assignment 1 Algorithm
+
+CONSTANTS:
+Declare a LOWER and UPPER value of temperature boundaries.
+
+QUERY:
+Query user for integer.
+Verify it is an integer between 1 and 9.
+Repeat query until a valid integer is given.
+Inform the user if an invalid input is given.
+
+PRINT COLUMN NAMES:
+Print the names of the columns "Fahrenheit Celsius Celsius Fahrenheit".
+Print the name separator line below.
+
+PRINT VALUES:
+Beginning from the LOWEST temperature boundary, print:
+	Formatted string for Fahrenheit -> Celsius conversion
+	Formatted string for Celsius -> Fahrenheit conversion, ending in \n.
+Increment the current target temperature by specified value.
+Repeat until it would pass beyond the UPPER boundary.
+
+EXIT:
+Exit the program with no errors.

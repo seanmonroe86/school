@@ -1,0 +1,50 @@
+Initialize an integer array to store
+	1- validity of arguments
+	2- first argument
+	3- second argument
+with default values: bad arguments, 0, 0.
+
+Validate input.
+	-Check that number of arguments is 3
+	-Check that the second and third arguments
+		-are integers between 1 and 13 inclusive
+		-have a product no more than 52
+	-End the program with an error prompt if any of these fail.
+	-Return a filled-in 'commands' array.
+
+Declare arrays of Card structures.
+	-One for the deck
+	-One for a temporary hand (to print)
+
+Make a new deck.
+	-Initialize variables to hold suit, value, and a counter
+	-Beginning with Ace of Hearts, add all values of Hearts
+	-Repeat with each suit
+
+Show the deck.
+	-For every card in the deck,
+		-Get its suit and value
+		-If it is a valid suit,
+			-Convert suit and value to strings
+			-Print the strings together
+
+Shuffle the deck.
+	-Use the Fisher-Yates method to shuffle cards
+		-Choose random card within the deck
+		-Swap it with the top card
+		-Repeat those steps swapping with decrementing card positions.
+
+Show the shuffled deck.
+	-Same as showing the unshuffled deck.
+
+Deal a hand N times, where N was the second argument given.
+	-Initialize a new hand filled with 'null' type values
+	-Starting from the top of the deck,
+		-Draw the next M cards of valid suit to each empty Hand slot
+		 where M is the number of cards per hand (first argument).
+		-Each card drawn is given a null suit in the deck as deletion.
+
+Show each hand as soon as it's made.
+	-Same as showing the decks, except pass each Hand as a parameter.
+
+Return no errors.
