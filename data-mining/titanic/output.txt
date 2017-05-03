@@ -1,0 +1,18 @@
+Random Forest-----------------------------------------------------
+Score: 0.9225589225589226
+Params:{'n_estimators': 20, 'criterion': 'entropy', 'max_depth': None, 'max_features': 4, 'n_jobs': -1}
+
+
+K-Nearest-Neighbor------------------------------------------------
+Score: 0.9225589225589226
+Params:{'n_neighbors': 7, 'weights': 'distance', 'p': 3, 'n_jobs': -1}
+
+
+Neural Network----------------------------------------------------
+Score: 0.813692480359147
+Params:{'hidden_layer_sizes': (200, 3), 'activation': 'logistic', 'max_iter': 500, 'tol': 1e-05}
+
+
+Support Vector Machine--------------------------------------------
+Score: 0.8395061728395061
+Params:{'kernel': 'rbf', 'degree': 4, 'tol': 0.0001}
